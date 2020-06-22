@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block content %}
+<th>
+	<img src="{{ imagesource }}" width="400px" height="250px">
+</th>
+<th class="text-info">
+	{{ label }} 
+</th>
+<th class="text-info">
+	{{ celeb_gender }} 
+</th>
+<th>
+	{{ emotion }} <span> {{ percentage }}% </span>
+
+	<div class="progress mb-3">
+		<div class="progress-bar bg-success" style="width: {{ percentage}}%">	
+		</div>
+	</div>
+</th>
+{% endblock %}
